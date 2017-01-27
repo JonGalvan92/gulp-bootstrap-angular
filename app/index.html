@@ -1,0 +1,62 @@
+<!doctype html>
+<html ng-app="MainApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jonathan Enrique <jonathan@fivetek.mx>">
+    <title>Workstation</title>
+
+    <!-- build:css styles/style.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/angular-loading-bar/build/loading-bar.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+
+    <div ng-controller="MenuCtrl" class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <a ng-href="#/" class="title item">5</a>
+            <div class="navbar-right">
+                <div class="ui simple dropdown item">
+                    <i class="browser icon"></i> Demo
+                    <i class="dropdown icon"></i>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Sony <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Tablet</a></li>
+                      <li><a href="#">Smartphone</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-view></div>
+
+    <!-- build:js script.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <!-- endbower -->
+    <script src="scripts/controllers/MenuCtrl.js"></script>
+    <script src="scripts/controllers/AuthCtrl.js"></script>
+    <script src="scripts/controllers/PaginationCtrl.js"></script>
+    <script src="scripts/controllers/TabularCtrl.js"></script>
+    <script src="scripts/services/PaginationService.js"></script>
+    <script src="scripts/services/TabularService.js"></script>
+    <script src="scripts/directives/pagination.js"></script>
+    <script src="scripts/directives/tabItem.js"></script>
+    <script src="scripts/directives/showIf.js"></script>
+    <script src="scripts/route.js"></script>
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
